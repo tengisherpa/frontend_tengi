@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            background-color: beige;
+        }
+        .header
+        {
+            display: flex;
+            height: 50px;
+            margin-left: 150px;
+             margin-right: 150px;
+            justify-content: space-around;
+            color:gray
+            background-color:green
+        }
+        .header input[type="text"]
+        {
+            margin-top: 30px;
+            border-radius: 40px;
+            text-align: center;
+            width: 300px;
+            height: 30px;
+        }
+        .header a
+        {
+              margin-top: 20px;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            color: gray;
+        }
+          .header a:hover
+          {
+            background-color: green;
+            color: white;
+            font-size: 25px;
+            border-radius: 25px;
+            height: 30px;
+          }
+        .header button
+        {
+            margin-top: 30px;
+            background-color: green;
+            border-radius: 25px;
+            color: white;
+            width: 200px;
+            height: 40px;
+            font-size: 15px;
+        }
+        .header2
+        {
+            margin-top: 25px;
+            display: flex;
+            height: 50px;
+            margin-left: 250px;
+             margin-right: 250px;
+            justify-content: space-around;
+            color:gray
+        }
+        .header2 a{
+            text-decoration: none;
+            color: black;
+            font-size: 25px;
+
+        }
+        .header2 a:hover{
+            background-color: green;
+            padding: 10px;
+            margin-bottom: 5px;
+            color: white;
+            font-size: 25px;
+            border-radius: 25px;
+          
+        }
+        .cards
+        {
+            position: relative;
+            top: 50px;
+            left: 250px;
+            width: 1000px;
+            display: flex;
+            gap: 5%;
+            flex-wrap: wrap;  
+        }
+       .card
+       {
+        border-radius: 25px;
+        border: 2px solid black;
+        height: 300px;
+        width: 200px;
+        margin-bottom: 50px;
+       }
+       .card:hover
+       {
+        padding: 2px;
+       }
+       .card h4,h5{
+        font-family: sans-serif;
+       }
+       .footer
+       {
+        position: relative;
+        top: 50px;
+        background-color: green;
+        height: 500px;
+       }
+       .footer .fcolumn
+       {
+        position: relative;
+        top: 100px;
+        left: 100px;
+        width: 300px;
+        background-color: green;
+       }
+       .footer .fcolumn h3{
+        background-color: green;
+        color: white;
+        word-spacing: 15px;
+       }
+       .footer .scolumn
+       {
+        position: relative;
+        top: -180px;
+        left: 600px;
+        width: 450px;
+        background-color: green;
+       }
+       .footer .scolumn h3,h1,label{
+        background-color: green;
+        color: white;
+       }
+        .footer .scolumn input[type="email"]{
+        background-color: white;
+        width: 55%;
+        height: 35px;
+        border: none;
+        border-bottom: 2px solid black;
+       }
+        .footer .scolumn input[type="checkbox"]{
+        background-color: white;
+        width: 10%;
+        height: 30px;
+       }
+       .footer .scolumn input[type="submit"]{
+        background-color: white;
+        width: 55%;
+        height: 50px;
+        background-color: yellowgreen;
+        color: white;
+        font-size: 25px;
+       }
+       .footer label{
+        font-size: 25px;
+       }
+       .footer .lcolumn
+       {
+        position: relative;
+        top: -500px;
+        left: 1200px;
+        width: 250px;
+        background-color: green;
+        display: flex;
+        flex-direction: column;
+       }
+       .footer .lcolumn a,h2
+       {
+     background-color: green;
+     color: white;
+     text-decoration: none;
+     font-size: 25px;
+
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+        <img height="80px" src="https://www.logoai.com/uploads/output/2025/02/08/562a52c054f32cd0c5b692d9f5fec756.jpg"
+        width="150px">
+        <input type="text" placeholder="Search">
+        <a href="">Browse</a>
+        <a href="">Contact us</a>
+        <button>Send Enquiry</button>
+        </div>
+        <br><br>
+        <hr>
+        <div class="header2">
+            <a href="">Home</a>
+            <a href="">Community-Media</a>
+            <a href="">About</a>
+            <a href="">Support Us</a>
+            <a href="">Blog</a>
+            <a href="">Event</a>
+
+        </div>
+        <hr>
+    </header>
+    <section>
+        <h1 align="center" style="color:white;">Blogs</h1>
+        <h2 align="center">Our Latest updates </h2>
+    </section>
+    <div class="cards">
+        <div class="card">
+        <img src="https://static.wixstatic.com/media/4038a7_16a0360cc4384ae6a4ce72df72349789~mv2.png/v1/fill/w_1363,h_1024,fp_0.50_0.50,q_95,enc_avif,quality_auto/4038a7_16a0360cc4384ae6a4ce72df72349789~mv2.png" height="150px" width="200px" style="border-radius: 25px;">
+        <h4 align="justify">Bandit The Rapper’s Take You There Listening Experience Was A Celebration of Culture</h4>
+        <h5 align="left" style="margin-left: 10px;margin-right:5px"><a href="" style="text-decoration:none;color:green">Read More</a>  &nbsp &nbsp &nbsp &nbsp 2026/10/07</h5>
+        
+        </div>
+        <div class="card">
+              <img src="https://static.wixstatic.com/media/4038a7_8c16c064ee934b5894664217a2fb574c~mv2.png/v1/fill/w_454,h_341,fp_0.50_0.50,q_95,enc_avif,quality_auto/4038a7_8c16c064ee934b5894664217a2fb574c~mv2.png" height="150px" width="200px" style="border-radius: 25px;">
+        <h4 align="justify">Homegrown Hero: Son of Jan Brings Hip Hop Home at the Africantown Diaspora Festival</h4>
+       <h5 align="left" style="margin-left: 10px;margin-right:5px"><a href="" style="text-decoration:none;color:green">Read More</a>  &nbsp &nbsp &nbsp &nbsp 2026/10/07</h5>
+        </div>
+        <div class="card">  
+            <img src="https://static.wixstatic.com/media/4038a7_687942e50d1d465e82a3de550a71d450~mv2.png/v1/fill/w_454,h_341,fp_0.50_0.50,q_95,enc_avif,quality_auto/4038a7_687942e50d1d465e82a3de550a71d450~mv2.png" height="150px" width="200px" style="border-radius: 25px;">
+        <h4 align="justify">Breaking the Silence: Why Lil Nas X's Bipolar Journey Matters to the Music Industry</h4>
+       <h5 align="left" style="margin-left: 10px;margin-right:5px"><a href="" style="text-decoration:none;color:green">Read More</a>  &nbsp &nbsp &nbsp &nbsp 2026/10/07</h5>
+    </div>
+        <div class="card">
+              <img src="https://static.wixstatic.com/media/4038a7_6ed469b6cc004ebcba3932f5ce4ba1ea~mv2.png/v1/fill/w_454,h_341,fp_0.50_0.50,q_95,enc_avif,quality_auto/4038a7_6ed469b6cc004ebcba3932f5ce4ba1ea~mv2.png" height="150px" width="200px" style="border-radius: 25px;">
+        <h4 align="justify">Unity in Diversity Shines at the 33rd Annual Islamic Heritage Festival at Cherry Street Pier</h4>
+       <h5 align="left" style="margin-left: 10px;margin-right:5px"><a href="" style="text-decoration:none;color:green">Read More</a>  &nbsp &nbsp &nbsp &nbsp 2026/10/07</h5>
+        </div>
+        <div class="card">
+              <img src="https://static.wixstatic.com/media/4038a7_3c617f828e0d407fab769568c40ae557~mv2.png/v1/fill/w_454,h_341,fp_0.50_0.50,q_95,enc_avif,quality_auto/4038a7_3c617f828e0d407fab769568c40ae557~mv2.png" height="150px" width="200px" style="border-radius: 25px;">
+        <h4 align="justify">Nina Capone Launches Official Website and Opens Up About Battling Agoraphobia</h4>
+       <h5 align="left" style="margin-left: 10px;margin-right:5px"><a href="" style="text-decoration:none;color:green">Read More</a>  &nbsp &nbsp &nbsp &nbsp 2026/10/07</h5>
+        </div>
+        <div class="card">
+              <img src="https://static.wixstatic.com/media/4038a7_a723441ccfb44e03b8bd42c74c340309~mv2.png/v1/fill/w_454,h_341,fp_0.50_0.50,q_95,enc_avif,quality_auto/4038a7_a723441ccfb44e03b8bd42c74c340309~mv2.png" height="150px" width="200px" style="border-radius: 25px;">
+        <h4 align="justify">Up Close With Bengy Jones: Building an Ecosystem That Protects and Empowers</h4>
+       <h5 align="left" style="margin-left: 10px;margin-right:5px"><a href="" style="text-decoration:none;color:green">Read More</a>  &nbsp &nbsp &nbsp &nbsp 2026/10/07</h5>
+        </div>
+        <div class="card">
+              <img src="https://static.wixstatic.com/media/4038a7_4bdf5ec526cb4ad1a7cd41d7361f5d62~mv2.png/v1/fill/w_454,h_341,fp_0.50_0.50,q_95,enc_avif,quality_auto/4038a7_4bdf5ec526cb4ad1a7cd41d7361f5d62~mv2.png" height="150px" width="200px" style="border-radius: 25px;">
+        <h4 align="justify">NAAM: The Story They Tried to Forget — And the Voice That Refuses to Stay Silent</h4>
+       <h5 align="left" style="margin-left: 10px;margin-right:5px"><a href="" style="text-decoration:none;color:green">Read More</a>  &nbsp &nbsp &nbsp &nbsp 2026/10/07</h5>
+        </div>
+        <div class="card">
+              <img src="https://static.wixstatic.com/media/4038a7_79ec91111098437aad1a3838387abeba~mv2.png/v1/fill/w_454,h_341,fp_0.50_0.50,q_95,enc_avif,quality_auto/4038a7_79ec91111098437aad1a3838387abeba~mv2.png" height="150px" width="200px" style="border-radius: 25px;">
+        <h4 align="justify">Turning Purpose Into Power:The Empowerment Zone DELCO and the Leader Uplifting</h4>
+       <h5 align="left" style="margin-left: 10px;margin-right:5px"><a href="" style="text-decoration:none;color:green">Read More</a>  &nbsp &nbsp &nbsp &nbsp 2026/10/07</h5>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="fcolumn">
+                <h3>
+                    INSPIRE DA STREETS<br><br>
+                    Our community outreach programs are designed to create positive change and foster unity.<br><br>
+                    Email: info@inspiredastreets.org<br><br>
+                    Phone: 215-443-1076<br><br>
+                    Registered Charity 501c3</h3>
+            </div>
+        
+         <div class="scolumn">
+            <h1>Get Monthly <br>Updates<br></h1>
+            <h3>Enter your email here*<br></h3>
+            <input type="email"><br><br>
+            <input type="checkbox"><label>Yes, Subscribe me to your newsletter.*</label><br><br>
+            <input type="submit" value="Sign Up!">
+         </div>
+    <div class="lcolumn">
+        <h2>Quick Links</h2>
+        <a href="">About</a>
+        <a href="">Support Us</a>
+        <a href="">News</a>
+        <a href="">Events</a>
+        <a href="">Podcast</a>
+        <a href="">Contact</a>
+    </div>
+</div>
+    </footer>
+
+    
+</body>
+</html>
