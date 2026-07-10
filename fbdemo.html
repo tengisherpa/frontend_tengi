@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 1px;
+            padding: 0px; 
+            background-color: #F2F4F7;
+        }
+        nav{
+            position:sticky;
+            display: flex;
+            background-color: white;
+            height: 70px;
+        }
+        nav .left
+        {
+            height: 60px;
+            width: 550px;
+            display: flex; 
+            background-color: white;
+        }
+        nav .left img
+        {
+            height: 50px;
+            width: 50px;
+        }
+        nav .left input[type="text"]
+         {
+            border-radius: 40px;
+            padding-left: 38px;
+            background-color:#F0F2F5 ;
+            border: none;
+            width: 200px;
+          }
+        
+        nav .center
+        {
+            height: 60px;
+            width: 600px;
+            display: flex;
+            background-color: white;
+            justify-content: space-around;
+        }
+        nav .center img{
+            height: 55px; 
+         background-color: white;
+               
+        }
+        nav .center a:hover{
+            background-color:#F0F2F5 ;
+            height: 60px;
+            width: 50px;
+        }
+        nav .right
+        {
+             height: 60px;
+            width: 550px;
+            display: flex;
+             background-color: white;
+            justify-content: end;
+            
+        }
+        #profile
+        {
+            height: 55px;
+            width: 55px;
+            border-radius: 100px;
+    
+        }
+        nav .right a{
+                background-color:#E2E5E9 ;
+                border-radius: 100%; 
+                padding: 10px;
+         }
+      
+        nav .right img{
+            height: 30px;    
+        }
+        section .left
+        {
+            position: fixed;
+            width: 400px;
+            height: 600px;
+            overflow: auto;
+        }
+        section .left ul
+    {
+        margin-left: 0px;
+        margin-top: 0px;
+        text-align: left;
+        font-size: 20px;
+        list-style: none;  
+    }
+          section .left li{
+            margin-left: 10px;
+            margin-top: 20px;
+            height: 35px;
+          }
+
+        section .left li:hover
+        {
+            background-color:rgb(156, 154, 154);
+
+        }
+         section .left i
+         {
+            width: 50px;
+            height: 50px;
+         }
+         section .center
+         {
+            width: 500px;
+            position: absolute;
+            top: 100px;
+            left: 450px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+             background-color: white;
+            
+         }
+
+         section .center .card1
+         {
+            background-color: white;
+            height: 460px;
+            width: 653px;
+         }
+           section .center .card1 .channel
+         {
+            background-color: white;
+            display: flex;
+            border: none;
+         }
+       
+         section .right
+         {
+            width: 320px;
+            position: absolute;
+            left: 750px;
+            top: -15px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background-color: white;
+ 
+         }
+            section .right ul{
+         text-align: left;
+        font-size: 20px;
+      background-color: white;
+    }
+         section .right li
+         {
+            list-style: none;
+             margin-left: 10px;
+            margin-top: 20px;
+            height: 35px;
+              background-color: white;
+         }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/3840px-Facebook_f_logo_%282021%29.svg.png">
+                <input type="text" placeholder="Search Facebook">
+            </div>
+            <div class="center">
+            <a href=""><img src="https://cdn-icons-png.flaticon.com/512/70/70950.png"></a>
+            <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs9IX5luogncMMkXbIRq_J4BiAre41ua47f1qWI-45Lg&s=10"></a>
+            <a href=""><img src="https://www.svgrepo.com/show/442452/bar-chart.svg"></a>
+            <a href=""><img src="https://www.freeiconspng.com/uploads/market-icon-4.png"></a>
+            <a href=""><img src="https://thumbs.dreamstime.com/b/people-vector-icon-group-symbol-illustration-businessman-logo-multiple-users-silhouette-153483996.jpg"></a>
+            </div>  
+            <div class="right">
+            <a href=""><img src="https://static.vecteezy.com/system/resources/previews/046/418/193/non_2x/grid-icon-symbol-design-illustration-vector.jpg"></a>
+            <a href=""><img src="https://www.iconpacks.net/icons/2/free-facebook-messenger-icon-2882-thumb.png"></a>
+            <a href=""><img src="https://cdn-icons-png.flaticon.com/512/8310/8310386.png"></a>
+           <img src="img1.jpg" id="profile">
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="left">
+           <ul>
+                <li><i class="fa-solid fa-user-group"></i>Tengi Sherpa</li>
+                <li><i class="fa-regular fa-house"></i>Meta AI</li>
+                <li><i class="fa-solid fa-circle"></i>Friends</li>
+                <li><i class="fa-regular fa-floppy-disk"></i>Dashboard</li>
+                <li><i class="fa-solid fa-user-group"></i>Saved</li>
+                <li><i class="fa-solid fa-thumbs-up"></i>Memories</li>
+                <li><i class="fa-solid fa-circle"></i>Groups</li>
+                <li><i class="fa-regular fa-floppy-disk"></i>Birthdays</li>
+                <li><i class="fa-solid fa-headphones"></i>Chat with AIs</li>
+                <li><i class="fa-solid fa-circle"></i>Events</li>
+                <li><i class="fa-solid fa-user-group"></i>Feeds</li>
+                <li><i class="fa-regular fa-floppy-disk"></i>Gaming Video</li>
+                <li><i class="fa-solid fa-user-group"></i>Marketplace</li>
+                <li><i class="fa-solid fa-file"></i>Messenger</li>
+                <li><i class="fa-solid fa-user-group"></i>Messenger Kids</li>
+                <li><i class="fa-regular fa-floppy-disk"></i>Orders and payments</li>
+                <li><i class="fa-solid fa-camera"></i>Pages</li>
+                <li><i class="fa-regular fa-floppy-disk"></i>Play games</li>
+                <li><i class="fa-solid fa-user-group"></i>Recent ad activity</li>
+                <li><i class="fa-solid fa-user-group"></i>Reels</li>
+           </ul> 
+        </div>
+
+        <div class="center">
+        
+       <div class="card1">
+        <div class="channel">
+        <img src="img3.jpg" style="border-radius: 100%; width:50px;height:50px";>
+        <h3 style=" background-color: white;">Taja Khabar</h3>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <i class="fa-solid fa-ellipsis" style=" background-color: white;"></i>
+        <i class="fa-solid fa-xmark" style=" background-color: white;"></i>
+        </div>
+        <h4>आ'त्मदाह'को प्रयास गरेका गणेश नेपालीको उपचारका क्रममा वीर अस्पतालमा नि'धन भएको छ।
+यसैसँगै, प्रहरीले घटनाको अनुसन्धानका लागि तीन जना नगर प्रहरी (२ जना महिला र १ जना पुरुष) लाई नियन्त्रणमा लिएको छ।</h4>
+        <img src="img2.jpeg" width="650" height="450">
+       </div>
+       
+       
+        <div class="right">
+            <ul>
+                <li><i class="fa-solid fa-user-group"></i>&nbspTengi Sherpa</li>
+                <hr>
+                <li><i class="fa-regular fa-house"></i>&nbspSee All Profiles</li>
+                <li><i class="fa-solid fa-circle"></i>&nbspSetting & Privacy</li>
+                <li><i class="fa-regular fa-floppy-disk"></i>&nbspHelp & Support</li>
+                <li><i class="fa-solid fa-user-group"></i>&nbspReport a Problem</li>
+                <li><i class="fa-solid fa-thumbs-up"></i>&nbspDisplay & Accessibility</li>
+                <li><i class="fa-solid fa-circle"></i>&nbspLog Out</li>
+                <li><h6 style="background-color: white;">Privacy  · Terms  · Advertising  · Ad Choices   · Cookies  · </h6></li>
+                </ul>
+        </div>
+    </section>
+</body>
+</html>

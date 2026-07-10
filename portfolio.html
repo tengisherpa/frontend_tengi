@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Tengi Sherpa</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            background-color: #0f172a; 
+            color: #e2e8f0; 
+            padding-top: 80px; 
+        }
+
+
+        .nav {
+            background-color: #1e293b; 
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav h1 {
+            color: #f59e0b; 
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .nav-links a {
+            color: #cbd5e1; 
+            text-decoration: none;
+            font-weight: 600;
+            margin-left: 20px;
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: #f59e0b; 
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px; 
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .text-column, .image-column {
+            flex: 1;
+        }
+
+        .btn-hire {
+            display: inline-block;
+            background-color: #f59e0b;
+            color: #0f172a;
+            padding: 10px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 700;
+            margin-top: 15px;
+            transition: background 0.2s ease;
+        }
+
+        .btn-hire:hover {
+            background-color: #d97706;
+        }
+
+
+        h2.section-title {
+            font-size: 2.5rem;
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: 800;
+        }
+
+        .text-column h1, .text-column h2 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            color: #ffffff; 
+            font-weight: 800;
+        }
+
+        .name-underline {
+            border-bottom: 4px solid #f59e0b; 
+            display: inline-block;
+            margin-top: 5px;
+            color: #f59e0b;
+        }
+
+        .text-column p {
+            font-size: 1.15rem;
+            color: #94a3b8; 
+            margin-bottom: 25px;
+        }
+
+   
+        ul {
+            list-style-type: none; 
+            padding-left: 0;
+        }
+
+        li {
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+            color: #e2e8f0;
+            display: flex;
+            align-items: center;
+        }
+
+        li::before {
+            content: "✦";
+            color: #f59e0b; 
+            font-weight: bold;
+            display: inline-block;
+            width: 1.5em;
+        }
+
+        .image-column img {
+            width: 100%;
+            max-width: 420px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 16px; 
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); 
+            border: 1px solid #334155; 
+        }
+
+
+        .skills-section {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .skill-card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #334155;
+        }
+
+        .skill-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        progress {
+            width: 100%;
+            height: 10px;
+            accent-color: #f59e0b;
+        }
+
+  
+        .services-section {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .service-card {
+            background-color: #1e293b;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .service-card img {
+            width: 50px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            color: #ffffff;
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+        }
+
+        .service-card p {
+            color: #94a3b8;
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+
+   
+        .resume-section {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .resume-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        .resume-column h3 {
+            font-size: 1.8rem;
+            color: #f59e0b;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #334155;
+            padding-bottom: 10px;
+        }
+
+        .resume-item {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #f59e0b;
+        }
+
+        .resume-item h4 {
+            color: #ffffff;
+            font-size: 1.2rem;
+        }
+
+        .resume-item .date {
+            color: #f59e0b;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin: 5px 0;
+        }
+
+        .resume-item .company {
+            color: #94a3b8;
+        }
+
+        .contact-section {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 60px 20px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 50px;
+            background: #1e293b;
+            padding: 40px;
+            border-radius: 16px;
+            border: 1px solid #334155;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            background: #0f172a;
+            border: 1px solid #334155;
+            color: #ffffff;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            font-family: inherit;
+        }
+
+        .contact-form input:focus, .contact-form textarea:focus {
+            outline: 1px solid #f59e0b;
+        }
+
+        .contact-form input[type="submit"] {
+            background: #f59e0b;
+            color: #0f172a;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background: #d97706;
+        }
+
+        .contact-info h3 {
+            font-size: 1.1rem;
+            color: #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 20px;
+        }
+
+        .contact-info p {
+            font-size: 1.3rem;
+            color: #ffffff;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .contact-info hr {
+            border: 0;
+            border-top: 1px solid #334155;
+        }
+
+    </style>
+</head>
+<body>
+    <hr id="home" style="border: 0; border-top: 1px solid #1e293b; max-width: 1100px; margin: 40px auto;"><br>
+    <div class="nav">
+        <h1>Portfolio</h1>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skill">Skills</a>
+            <a href="#services">Services</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+   
+  
+    <div class="container" id="home">
+        <div class="text-column">
+            <h1>Hello, I'm <br><span class="name-underline">Tengi Sherpa</span></h1>
+            <p>Experienced Web Developer Focused on Responsive Design, High Performance, Creative User Experiences, Modern UI/UX Solutions, and Building Fast for Clients Worldwide.</p>
+            <a href="#contact" class="btn-hire">Hire Me</a>
+        </div>
+        <div class="image-column">
+            <img src="img1.jpg" alt="Tengi Sherpa Profile Photo">
+        </div>
+    </div>
+
+    <hr id="about" style="border: 0; border-top: 1px solid #1e293b; max-width: 1100px; margin: 40px auto;"><br>
+
+
+    <div class="container" id="about">
+        <div class="image-column">
+            <img src="img1.jpg" alt="About Tengi Sherpa">
+        </div>
+        <div class="text-column">
+            <h2>About Me</h2>
+            <p>Hello! I'm Tengi Sherpa, a Full Stack Developer & UI/UX designer with 8+ years building products that people love. I bridge the gap between pixel-perfect design and bulletproof engineering — creating experiences that are not just beautiful, but obsessively functional.</p>
+            <ul>
+                <li>100+ Completed Projects</li>
+                <li>40+ Happy Customers</li>
+                <li>Available for Freelance</li>
+                <li>English, French</li>
+            </ul>
+        </div>
+    </div>
+<hr id="skill" style="border: 0; border-top: 1px solid #1e293b; max-width: 1100px; margin: 40px auto;">
+    <div class="skills-section" >
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-info"><span>HTML/CSS</span><span>88%</span></div>
+                <progress max="1.0" value="0.88"></progress>
+            </div>
+            <div class="skill-card">
+                <div class="skill-info"><span>PHP</span><span>80%</span></div>
+                <progress max="1.0" value="0.8"></progress>
+            </div>
+            <div class="skill-card">
+                <div class="skill-info"><span>JavaScript</span><span>65%</span></div>
+                <progress max="1.0" value="0.65"></progress>
+            </div>
+            <div class="skill-card">
+                <div class="skill-info"><span>Java</span><span>70%</span></div>
+                <progress max="1.0" value="0.7"></progress>
+            </div>
+            <div class="skill-card">
+                <div class="skill-info"><span>Bootstrap</span><span>45%</span></div>
+                <progress max="1.0" value="0.45"></progress>
+            </div>
+            <div class="skill-card">
+                <div class="skill-info"><span>Python</span><span>40%</span></div>
+                <progress max="1.0" value="0.4"></progress>
+            </div>
+            <div class="skill-card">
+                <div class="skill-info"><span>Git & GitHub</span><span>60%</span></div>
+                <progress max="1.0" value="0.6"></progress>
+            </div>
+            <div class="skill-card">
+                <div class="skill-info"><span>SQL</span><span>65%</span></div>
+                <progress max="1.0" value="0.65"></progress>
+            </div>
+        </div>
+    </div>
+<hr id="services" style="border: 0; border-top: 1px solid #1e293b; max-width: 1100px; margin: 40px auto;"><br>
+    <div class="services-section" >
+        <h2 class="section-title">My Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="be.png" alt="UI/UX Icon">
+                <h3>UI / UX Design</h3>
+                <p>Crafting intuitive, visually striking interfaces backed by solid user research and interaction design principles.</p>
+                <ul>
+                    <li>Wireframing & Prototyping</li>
+                    <li>Design Systems</li>
+                    <li>Usability Testing</li>
+                    <li>Figma / Adobe XD</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <img src="fe.png" alt="Frontend Icon">
+                <h3>Frontend Development</h3>
+                <p>Building blazing-fast, accessible web experiences with modern frameworks and meticulous attention to detail.</p>
+                <ul>
+                    <li>React / Next.js</li>
+                    <li>TypeScript</li>
+                    <li>Performance Optimization</li>
+                    <li>Animation & Motion</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <img src="ux.png" alt="Backend Icon">
+                <h3>Backend Development</h3>
+                <p>Scalable server-side architectures, RESTful & GraphQL APIs, and database design that powers your product.</p>
+                <ul>
+                    <li>Node.js / Express</li>
+                    <li>PostgreSQL / MongoDB</li>
+                    <li>REST & GraphQL APIs</li>
+                    <li>Authentication & Security</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<hr id="resume" style="border: 0; border-top: 1px solid #1e293b; max-width: 1100px; margin: 40px auto;">
+    <div class="resume-section">
+        <h2 class="section-title">Resume and History</h2>
+        <div class="resume-grid">
+            <div class="resume-column">
+                <h3>Experience</h3>
+                <div class="resume-item">
+                    <h4>Full Stack Dev</h4>
+                    <div class="date">2022 — PRESENT</div>
+                    <div class="company">TechVision Solutions</div>
+                </div>
+                <div class="resume-item">
+                    <h4>Frontend Lead Engineer</h4>
+                    <div class="date">2020 — 2022</div>
+                    <div class="company">SKY Solutions</div>
+                </div>
+                <div class="resume-item">
+                    <h4>UI/UX Developer</h4>
+                    <div class="date">2018 — 2020</div>
+                    <div class="company">Orbit Creative Studio</div>
+                </div>
+            </div>
+            <div class="resume-column">
+                <h3>Education</h3>
+                <div class="resume-item">
+                    <h4>Master Degree Software Development</h4>
+                    <div class="date">2026 — 2028</div>
+                    <div class="company">Tribhuvan University</div>
+                </div>
+                <div class="resume-item">
+                    <h4>Bachelor in Information Management</h4>
+                    <div class="date">2020 — 2025</div>
+                    <div class="company">Asian School of Management and Technology</div>
+                </div>
+                <div class="resume-item">
+                    <h4>Physical Science</h4>
+                    <div class="date">2017 — 2019</div>
+                    <div class="company">Southwestern State College</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="contact-section" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-grid">
+            <div class="contact-form">
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <input type="number" placeholder="Phone Number">
+                    <input type="text" placeholder="Project Type">
+                    <textarea placeholder="Tell me about your project" rows="5" required></textarea>
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+            <div class="contact-info">
+                <h3>Email address</h3>
+                <p>stengi558@gmail.com</p>
+                <hr>
+                <h3>Phone Number</h3>
+                <p>+977-986-6668778</p>
+                <hr>
+                <h3>Location</h3>
+                <p>Kathmandu, Nepal</p>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
